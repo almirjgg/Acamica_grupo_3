@@ -78,15 +78,4 @@ function division(num1, num2) {
 }
 
 
-
-//division
-
-function division(num1, num2) {
-
-    num1 = parseInt(prompt("Ingrese el numero a dividir"));
-    num2 = parseInt(prompt("Ingrese el numero divisor"));
-    var result = parseInt(num1 / num2);
-    
-    return result;
-}
 main();
