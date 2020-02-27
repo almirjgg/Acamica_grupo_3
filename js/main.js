@@ -18,7 +18,7 @@ function main() {
             document.write("El promedio de los numeros es: " + promedio());
         } else if (opcion == "perimetro") {
             document.write("El perimetro es: " + perimetro());
-        } else if (opcion == "disivion") {
+        } else if (opcion == "division") {
             document.write("la division es: " + division());
         } else {
             alert("la opcion no es correcta");
@@ -62,6 +62,21 @@ function perimetro(diametro) {
 
 }
 
-//
+//division
+function division(num1, num2) {
+    num1 = parseInt(prompt("Ingrese el primer numero a dividir"));
+    num2 = parseInt(prompt("Ingrese el divisor"));
+    var result = "";
+    if (num2 === 0) {
+        result = "no es posible dividor entre 0";
+    } else {
+        result = num1 / num2;
+    }
+
+    return result;
+
+}
+
+
 
 main();
