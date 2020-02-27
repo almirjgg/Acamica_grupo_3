@@ -1,6 +1,6 @@
 //Actividad de funciones
 
-
+//funcion principal
 function main() {
     //
     var pass = prompt("COLOCA LA CONTRASEÑA PARA INGRESAR A LA APLICACION").toLocaleLowerCase();
@@ -9,6 +9,7 @@ function main() {
         menu += "SUMA\n";
         menu += "PROMEDIO\n";
         menu += "PERIMETRO\n";
+        menu += "DIVISION\n";
         var opcion = prompt(menu.toLocaleLowerCase());
 
         if (opcion == "suma") {
@@ -17,6 +18,8 @@ function main() {
             document.write("El promedio de los numeros es: " + promedio());
         } else if (opcion == "perimetro") {
             document.write("El perimetro es: " + perimetro());
+        } else if (opcion == "disivion") {
+            document.write("la division es: " + division());
         } else {
             alert("la opcion no es correcta");
         }
@@ -27,6 +30,7 @@ function main() {
 
 }
 
+//suma
 function suma(num1, num2) {
     num1 = parseInt(prompt("Ingrese el primer numero"));
     num2 = parseInt(prompt("Ingrese el segundo numero"));
@@ -36,6 +40,7 @@ function suma(num1, num2) {
 
 }
 
+//promedio
 function promedio(num1, num2, num3, num4, num5) {
     num1 = parseInt(prompt("Ingrese el primer numero"));
     num2 = parseInt(prompt("Ingrese el segundo numero"));
@@ -49,11 +54,14 @@ function promedio(num1, num2, num3, num4, num5) {
 
 }
 
+//perimetro
 function perimetro(diametro) {
     diametro = parseInt(prompt("ingrese el diametro del circulo para calcular el perimetro"));
     var perimetro = Math.PI * diametro;
     return perimetro;
 
 }
+
+//
 
 main();
