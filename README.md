@@ -1,2 +1,2 @@
 # funciones
- practica de fuinciones Acamica
+ Practica de funciones Acamica
