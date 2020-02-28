@@ -10,6 +10,7 @@ function main() {
         menu += "PROMEDIO\n";
         menu += "PERIMETRO\n";
         menu += "DIVISION\n";
+        menu += "DIAMETRO\n";
         var opcion = prompt(menu.toLocaleLowerCase());
 
         if (opcion == "suma") {
@@ -20,6 +21,8 @@ function main() {
             document.write("El perimetro es: " + perimetro());
         } else if (opcion == "division") {
             document.write("la division es: " + division());
+        } else if(opcion == "diametro") {
+            document.write("el diametro es: " + diametro());
         } else {
             alert("la opcion no es correcta");
         }
@@ -59,6 +62,14 @@ function perimetro(diametro) {
     diametro = parseInt(prompt("ingrese el diametro del circulo para calcular el perimetro"));
     var perimetro = Math.PI * diametro;
     return perimetro;
+
+}
+
+//diametro
+function diametro(radio) {
+    radio = parseInt(prompt("ingrese el radio del circulo para calcular el diametro"));
+    var diametro = 2 * radio;
+    return diametro;
 
 }
 
