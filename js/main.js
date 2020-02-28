@@ -56,11 +56,11 @@ function promedio(num1, num2, num3, num4, num5) {
     return promedio;
 
 }
-
+const PI = 3.1416;
 //perimetro
 function perimetro(diametro) {
     diametro = parseInt(prompt("ingrese el diametro del circulo para calcular el perimetro"));
-    var perimetro = Math.PI * diametro;
+    var perimetro = PI * diametro;
     return perimetro;
 
 }
@@ -68,7 +68,7 @@ function perimetro(diametro) {
 //diametro
 function diametro(radio) {
     radio = parseInt(prompt("ingrese el radio del circulo para calcular el diametro"));
-    var diametro = 2 * radio;
+    var diametro = radio * 2;
     return diametro;
 
 }
